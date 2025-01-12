@@ -1,0 +1,34 @@
+Fibonacci's sequence of numbers consists on each number being the sum of its two immediate predecesors
+
+Whenever we have an algorithm, there are three questions we always ask about it:
+1. Is it correct?
+2. How much time does it take, as a function of n?
+3. And can we do better?
+
+Big O notation
+
+f2(n) = 2n + 20
+f1(n) = n²
+
+f2 = Of1            (Read as f2 grows no faster than f1)
+
+means there exists a constant value c > 0 and a value n0 such that n > n0
+
+to evaluate if f2 grows no faster than f1 we do:
+
+f2(n) / f1(n)      =       2n + 20    /     n²
+
+when approaching infinity, it goes to 0, thus meaning that in fact f2 = Of1
+if when approaching infinity goes to infinity, then f2 = Of1 is not true since it would mean f2 grows at a much faster rate than f1
+
+
+f = Ω(g) means g = O(f)
+
+f = Θ(g) means f = O(g) and f = Ω(g).
+
+
+1. Multiplicative constants can be omitted: 14n² becomes n².
+2. n to the a dominates n to the b if a > b: for instance, n² dominates n.
+3. Any exponential dominates any polynomial: 3 to the n dominates n to the 5 (it even dominates 2 to the n).
+4. Likewise, any polynomial dominates any logarithm: n dominates (log n) to the 3. This
+also means, for example, that n² dominates nlog n.
